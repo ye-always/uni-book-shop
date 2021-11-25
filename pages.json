@@ -10,12 +10,40 @@
 			}
 		},
 		{
-			"path": "pages/center/index",
+			"path": "pages/category/category",
+			"style": {
+				"navigationBarTitleText": "分类"
+			}
+		},
+		{
+			"path": "pages/shopcart/shopcart",
+			"style": {
+				"navigationBarTitleText": "购物车"
+			}
+		},
+		{
+			"path": "pages/profile/profile",
 			"style": {
 				"navigationBarTitleText": "个人中心"
 			}
+		}, {
+			"path": "pages/auth/login",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
 		}
-	],
+        ,{
+            "path" : "pages/auth/register",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uView",
@@ -23,20 +51,30 @@
 		"backgroundColor": "#F8F8F8"
 	},
 	"tabBar": {
-	    "color": "#909399",
-	    "selectedColor": "#303133",
-	    "borderStyle": "black",
-	    "backgroundColor": "#ffffff",
-	    "list": [{
-	        "pagePath": "pages/index/index",
-	        "iconPath": "static/index.png",
-	        "selectedIconPath": "static/index-selected.png",
-	        "text": "首页"
-	    }, {
-	        "pagePath": "pages/center/index",
-	        "iconPath": "static/center.png",
-	        "selectedIconPath": "static/center-selected.png",
-	        "text": "我"
-	    }]
+		"color": "black",
+		"selectedColor": "#35a6e1",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/tabar/home.png",
+			"selectedIconPath": "static/tabar/home_active.png",
+			"text": "首页"
+		}, {
+			"pagePath": "pages/category/category",
+			"iconPath": "static/tabar/category.png",
+			"selectedIconPath": "static/tabar/category_active.png",
+			"text": "分类"
+		}, {
+			"pagePath": "pages/shopcart/shopcart",
+			"iconPath": "static/tabar/shopcart.png",
+			"selectedIconPath": "static/tabar/shopcart_active.png",
+			"text": "购物车"
+		}, {
+			"pagePath": "pages/profile/profile",
+			"iconPath": "static/tabar/profile.png",
+			"selectedIconPath": "static/tabar/profile_active.png",
+			"text": "我"
+		}]
 	}
 }
